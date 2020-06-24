@@ -8,7 +8,7 @@ import (
 func main() {
 	fs := http.FileServer(http.Dir("public"))
 
-	log.Println("Executando...")
+	log.Println("Executando na porta 3000...")
 	log.Fatal(http.ListenAndServe(":3000", fs))
 }
 
